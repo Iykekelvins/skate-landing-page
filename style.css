@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color:  #0392BF;
+    color:#B3D4E0;
+    line-height: 1.6rem;
+}
+
+aside{
+    background-color:#B3D4E0;
+    padding:1.5rem;
+    min-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 3rem;
+}
+
+h1{
+    font-family: "Nunito", sans-serif !important;
+    line-height: 1.8rem;
+}
+
+a{
+    color: #B3D4E0;
+    cursor: pointer;
+}
+
+footer{
+    display: none;
+}
+
+.logo{
+    height: 20px;
+}
+
+.social-icons i{
+    color:#0392BF;
+    margin: .3rem;
+}
+
+.toggle-btns{
+    display: none;
+}
+
+.body-section{
+    display: flex;
+}
+
+.nav-list li{
+    list-style: none;
+    display: inline;
+    margin:1.5rem;
+}
+
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 4rem;
+}
+
+.hero-img h1{
+    line-height: 3rem;
+    font-size: 3rem;
+}
+
+.hero-img span{
+    display: block;
+    margin-left: 4rem;
+}
+
+.hero-img img{
+    height: 380px;
+}
+
+.ratings{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-product{
+    margin-left: 5rem;
+}
+
+.about-product span i{
+    margin-right: .2rem;
+    color:#ffee00;
+}
+
+.about-product h1{
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.about-product p{
+    margin: 1rem 0;
+}
+
+.about-product h4{
+    margin: 1rem 0;
+}
+
+.switch{
+    display: flex;
+}
+
+.switch-btns{
+    display: flex;
+    padding: 1rem 2rem .3rem;
+}
+
+.switch-btns div{
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.blue{
+    background-color:#B3D4E0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.pink{
+    background-color:#ED48BA;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.yellow{
+    background-color:#FBEC06;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.white{
+    background-color:#fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.select{
+    display: flex;
+    align-items: center;
+}
+
+.options{
+    margin-left: 4rem;
+    font-family: "Poppins", sans-serif !important;
+}
+
+.order-btn{
+    border: 1px solid #b5b5b5;
+    color: #fff;
+    background-color:#ED48BA;
+    padding: .5rem 1rem;
+    letter-spacing: .2rem;
+    cursor: pointer;
+}
+
+.order-btn:hover{
+    background-color:#ec64c1;
+}
+
+@media screen and (max-width:1140px){
+    .hero-img img{
+        height: 350px;
+    }
+    .about-product{
+        margin-left: 3rem;
+    }
+}
+
+@media screen and (max-width:1023px){
+    .hero-img {
+        margin: 0 auto;
+        display: grid;
+        place-items: center;
+    }
+    .toggle-btns{
+        display: unset !important;
+    }
+    .toggle-btns:hover{
+        cursor: pointer;
+        transition: ease 0.6s;
+    }
+    .hide-bars{
+        display: none;
+    }
+    .fa-times{
+        display: none;
+    }
+    .show-times{
+        display: unset !important;
+    }
+    .nav-list{
+        background: white;
+        border: none;
+        border-radius: 8px;
+        height: 0;
+        overflow: hidden;
+        width: 300px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        left: 30%;
+        right: 30%;
+        top: 70px;
+        margin: 0 auto;
+        transition: ease-in-out 0.3s;
+    }
+    .show-list{
+        height: 215px;
+    }
+    .nav-list li{
+        display: grid;
+        place-items: center;
+        margin: 15px auto;
+    }
+    .hero-section{
+        display: grid;
+    }
+    .about-product{
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width:700px){
+    .footer{
+        padding:1.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .about-product{
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width:700px){
+    .nav-list{
+        left:40%;
+    }
+}
